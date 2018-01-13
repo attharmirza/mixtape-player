@@ -54,8 +54,6 @@ show_drafts:
 limit_posts: 0
 future: false
 unpublished: false
-whitelist: []
-plugins: []
 markdown: kramdown
 highlighter: rouge
 lsi: false
@@ -73,10 +71,6 @@ quiet: false
 verbose: false
 liquid:
   error_mode: warn
-rdiscount:
-  extensions: []
-redcarpet:
-  extensions: []
 kramdown:
   auto_ids: true
   entity_output: as_char
