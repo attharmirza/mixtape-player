@@ -4,30 +4,32 @@ pages:
 hide_body: false
 fields:
 - name: title
-  label: Title
+  label: Song Name
   type: text
   hidden: false
-  default: 
+  default: ''
+  config:
+    required: true
 - name: id
   label: Id
   type: text
   hidden: false
   default: 
+  config:
+    required: true
 - name: artist
   label: Artist
   type: text
   hidden: false
   default: 
-- name: cover
+  config:
+    required: false
+- type: file
+  name: cover
   label: Cover
-  type: text
-  hidden: false
-  default: 
-- name: file
+- type: file
   label: File
-  type: text
-  hidden: false
-  default: 
+  name: file
 - name: position
   label: Position
   type: text
