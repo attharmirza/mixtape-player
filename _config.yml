@@ -21,12 +21,11 @@ defaults:
     path: ''
     type: songs
   values:
-    title:
-    id:
-    artist:
-    image:
-    file:
-    position:
+    title: 
+    id: 
+    artist: 
+    image: 
+    file: 
 source: "."
 destination: "./_site"
 collections_dir: "."
@@ -51,7 +50,7 @@ keep_files:
 encoding: utf-8
 markdown_ext: markdown,mkdown,mkdn,mkd,md
 strict_front_matter: false
-show_drafts:
+show_drafts: 
 limit_posts: 0
 future: false
 unpublished: false
@@ -73,26 +72,6 @@ quiet: false
 verbose: false
 liquid:
   error_mode: warn
-
-defaults:
--
-  scope:
-    path: ""
-    type: "pages"
-  values:
-    layout: default
--
-  scope:
-    path: ""
-    type: "songs"
-  values:
-    title:
-    id:
-    artist:
-    image:
-    file:
-
-# Markdown Processors
 rdiscount:
   extensions: []
 redcarpet:
