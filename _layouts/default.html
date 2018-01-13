@@ -87,9 +87,9 @@
     <div class="tapeRack">
       {% assign sortedSongs = site.songs | sort:"position" %} {% for song in sortedSongs %}
       <div class="tape {{ song.identifier }}">
-        <img src="{{ song.image }}" />
+        <img src="{{ baseurl }}{{ song.image }}" />
         <audio id="{{ song.identifier }}" onended="nextSong()">
-          <source src="{{ song.file }}" type="audio/mpeg">
+          <source src="{{ baseurl }}{{ song.file }}" type="audio/mpeg">
         </audio>
       </div>
       <script>
