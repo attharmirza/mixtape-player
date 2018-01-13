@@ -28,9 +28,13 @@
         font-family: PoplarStd, Poplar Std;
       }
 
-      .cls-5 {
+      .cls-5, .cls-6 {
         font-family: TYPOGRAPHPRO-ExtraBold, TYPOGRAPH PRO;
         font-weight: 700;
+      }
+
+      .cls-6 {
+        font-size: 17.229px;
       }
     </style>
   </defs>
@@ -43,10 +47,10 @@
       <polyline class="cls-1" points="64.729 80.891 94.117 161.518 106.927 80.891"/>
     </g>
     <g>
-      <polygon class="cls-1" points="204.281 100 191.92 111.166 213.876 155.499 251.017 123.498 241.172 106.584 204.281 100"/>
-      <line class="cls-1" x1="191.92" y1="111.166" x2="251.017" y2="123.498"/>
-      <polyline class="cls-1" points="241.172 106.584 227.877 118.669 219.113 102.647 207.941 114.509 204.281 100"/>
-      <polyline class="cls-1" points="207.941 114.509 213.876 155.499 227.877 118.669"/>
+      <polygon class="cls-1" points="202.28 96.998 189.919 108.164 211.874 152.496 249.015 120.496 239.171 103.581 202.28 96.998"/>
+      <line class="cls-1" x1="189.919" y1="108.164" x2="249.015" y2="120.496"/>
+      <polyline class="cls-1" points="239.171 103.581 225.875 115.667 217.111 99.644 205.939 111.507 202.28 96.998"/>
+      <polyline class="cls-1" points="205.939 111.507 211.874 152.496 225.875 115.667"/>
     </g>
     <g>
       <polygon class="cls-2" points="239.225 43.333 235.563 54.985 265.919 74.844 277.499 40.812 264.989 33.781 239.225 43.333"/>
@@ -126,4 +130,5 @@
   </g>
   <text class="cls-4" transform="translate(1064.327 171.711) rotate(-90)">38742987983</text>
   <text class="cls-5" transform="translate(1073.052 171.711) rotate(-90)">38742987983</text>
+  <text class="cls-6" transform="translate(230.033 160.615)">WHITE DRESS</text>
 </svg>

@@ -1,8 +1,16 @@
+.tapePlayer {
+  width: 60%;
+  margin: auto;
+}
+
 .tapeRack {
   position:absolute;
   width: 80vw;
   left: 50%;
   transform: translateX(-50%);
+  // border-bottom: 5px rgb(0, 0, 0) solid;
+  padding-bottom: 20px;
+  // margin-bottom: 10px;
 }
 
 .tape {
