@@ -3,23 +3,50 @@
 {% include info.html %}
 
 <body>
-  <div class="tapeRack">
-    {% assign sortedSongs = site.songs | sort:"position" %}
-    {% for song in sortedSongs %}
-    <div class="tape">
-      <img src="{{ song.image }}" />
-      <audio id="{{ song.id }}">
-        <source src="{{ song.file }}" type="audio/mpeg">
-      </audio>
+  <div class="content">
+    <div class="tapePlayer"></div>
+    <div class="tapeRack">
+      {% assign sortedSongs = site.songs | sort:"position" %} {% for song in sortedSongs %}
+      <div class="tape {{ song.identifier }}">
+        <img src="{{ song.image }}" />
+        <audio id="{{ song.identifier }}">
+          <source src="{{ song.file }}" type="audio/mpeg">
+        </audio>
+      </div>
+      <script>
+        $(document).ready(function() {
+          $('.{{ song.identifier }}').click(function() {
+            if ($(this).find('audio')[0].paused == true) {
+              var allTracks = $('body').find('audio');
+              for (i = 0; i < allTracks.length; i++) {
+                allTracks[i].pause();
+                allTracks[i].load();
+              };
+
+              $('.tape').css('background-color', 'inherit')
+
+              $(this).css('background-color', 'rgb(249, 62, 62)');
+              $(this).find('audio')[0].play();
+
+            } else {
+
+              $(this).css('background-color', 'inherit');
+              $(this).find('audio')[0].pause()
+              $(this).find('audio')[0].load();
+
+            }
+          });
+        });
+      </script>
+      {% endfor %}
     </div>
-    <script>
-      $(document).ready(function() {
-        // $('#{{ song.id }}')
-      });
-    </script>
-    {% endfor %}
   </div>
-  <div class="tapePlayer"></div>
+
+  <script>
+    $(document).ready(function() {
+      
+    });
+  </script>
 </body>
 
 </html>

@@ -1,14 +1,22 @@
 .tapeRack {
-  max-width: 80%;
-  margin: 10% auto 0;
+  position:absolute;
+  width: 80vw;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .tape {
-  border-radius: 20px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 0 0 3px rgb(0, 0, 0) inset;
   overflow: hidden;
   margin: 0;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+
   &:hover {
-    background-color: rgb(249, 62, 62);
+    // background-color: rgb(249, 62, 62);
     cursor: pointer;
   }
 }
