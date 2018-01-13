@@ -63,7 +63,7 @@ detach: false
 port: 4000
 host: 127.0.0.1
 baseurl: "/MixtapeWebsite"
-url: "https://attharmirza.github.io"
+url: https://attharmirza.github.io
 show_dir_listing: false
 permalink: date
 paginate_path: "/page:num"
