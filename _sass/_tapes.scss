@@ -1,0 +1,14 @@
+.tapeRack {
+  max-width: 80%;
+  margin: 10% auto 0;
+}
+
+.tape {
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0;
+  &:hover {
+    background-color: rgb(249, 62, 62);
+    cursor: pointer;
+  }
+}

@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 200">
   <defs>
     <style>
-      .cls-1 {
-        fill: #fff;
-        stroke-miterlimit: 10;
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        fill: none;
+        stroke: #000;
       }
 
-      .cls-1, .cls-2, .cls-3, .cls-5 {
-        stroke: #000;
+      .cls-1 {
+        stroke-miterlimit: 10;
       }
 
       .cls-1, .cls-3 {
@@ -15,7 +15,6 @@
       }
 
       .cls-2, .cls-3, .cls-5 {
-        fill: none;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
@@ -103,6 +102,6 @@
     <path class="cls-5" d="M114.327,145.718c25.793,6.687,360.145-6.687,447.077-3.821s57.318,14.329,70.692,7.642"/>
     <path class="cls-5" d="M113.372,161.958c6.687-5.732,54.452,4.777,68.781.955S514.6,147.629,527.969,152.405s69.736,6.687,83.11,4.777"/>
     <text class="cls-6" transform="translate(735.448 96.519)">Ari<tspan class="cls-7"><tspan x="0" y="38.859">L</tspan><tspan class="cls-8" x="17.811" y="38.859">enn</tspan><tspan class="cls-9" x="76.648" y="38.859">o</tspan><tspan class="cls-10" x="95.3" y="38.859">x</tspan></tspan></text>
-    <text class="cls-11" transform="matrix(-0.003, -1, 1, -0.003, 1041.087, 141.991)"><tspan class="cls-12">1</tspan><tspan x="4.668" y="0">9</tspan><tspan class="cls-13" x="12.108" y="0">2</tspan><tspan class="cls-14" x="18.636" y="0">8</tspan><tspan class="cls-15" x="25.56" y="0">7</tspan><tspan class="cls-16" x="31.86" y="0">A</tspan><tspan x="39.768" y="0">S</tspan><tspan class="cls-17" x="47.292" y="0">D</tspan><tspan x="55.104" y="0">JK2</tspan></text>
+    <text class="cls-11" transform="matrix(-0.003, -1, 1, -0.003, 1041.087, 141.989)"><tspan class="cls-12">1</tspan><tspan x="4.668" y="0">9</tspan><tspan class="cls-13" x="12.108" y="0">2</tspan><tspan class="cls-14" x="18.636" y="0">8</tspan><tspan class="cls-15" x="25.56" y="0">7</tspan><tspan class="cls-16" x="31.86" y="0">A</tspan><tspan x="39.768" y="0">S</tspan><tspan class="cls-17" x="47.292" y="0">D</tspan><tspan x="55.104" y="0">JK2</tspan></text>
   </g>
 </svg>

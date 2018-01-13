@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        font-family: TYPOGRAPHPRO-ExtraBold, TYPOGRAPH PRO;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <title>replica</title>
+  <g id="Frame">
+    <path d="M1082.616,3A14.4,14.4,0,0,1,1097,17.384V182.616A14.4,14.4,0,0,1,1082.616,197H17.384A14.4,14.4,0,0,1,3,182.616V17.384A14.4,14.4,0,0,1,17.384,3H1082.616m0-3H17.384A17.384,17.384,0,0,0,0,17.384V182.616A17.384,17.384,0,0,0,17.384,200H1082.616A17.384,17.384,0,0,0,1100,182.616V17.384A17.384,17.384,0,0,0,1082.616,0Z"/>
+  </g>
+  <g id="Logos">
+    <path class="cls-1" d="M457.274,18.029c-.863,14.135-6.313,144.022-2,159.687"/>
+    <path class="cls-1" d="M469.346,23.541c0,7.76,9,136.242,4.5,144.865"/>
+    <path class="cls-1" d="M483.04,23.541c-2.484,27.593,6.041,136.242,7.383,144.865"/>
+    <path class="cls-1" d="M497.343,18.029c1.321,48.626,9.069,143.191,6.919,153.682"/>
+    <path class="cls-1" d="M509.874,23.541c-.863,10.347,5.173,24.144,6.036,39.665s-1.725,98.876,0,108.505"/>
+    <path class="cls-1" d="M530.569,18.029c-1.725,8.961-6.9,33.105-4.312,46.04s3.6,37.94,1.8,48.288.787,37.078,2.512,52.6"/>
+    <path d="M18.519,21.117c-6.733.684-.9,101.446-1.4,115.158s.073,36.6,2.049,43.069,192.1,4.671,220.346,4.565,187.528-4.413,195.436,0,4.432-146.836,7.932-159.263S76.824,15.192,18.519,21.117ZM52.344,47.234H46.009v16.61H41.326V47.234H35.018V42.552H52.344Zm22.944,16.61H70.605V54.479H60.552v9.365H55.869V42.552h4.683V49.8H70.605V42.552h4.683Zm18.455-16.61H84.818V50.4H93.44v4.683H84.818v4.076h8.925v4.683H80.136V42.552H93.743ZM212.21,171.711H201.8l-32.883-46.219-32.882,46.219H97.852l52.064-73.072L101.505,30.5h38l29.411,41.286L198.326,30.5h38L187.913,98.639l52.065,73.072Zm147.787,0H349.584L316.7,125.492l-32.882,46.219h-38.18L297.7,98.639,249.292,30.5h38L316.7,71.784,346.113,30.5h38L335.7,98.639l52.065,73.072Z"/>
+    <text class="cls-2" transform="translate(546.824 34.878)">replica</text>
+    <text class="cls-2" transform="translate(558.139 54.588)">replica</text>
+    <text class="cls-2" transform="translate(549.014 73.568)">replica</text>
+    <text class="cls-2" transform="translate(557.774 101.309)">replica</text>
+    <text class="cls-2" transform="translate(552.299 120.654)">replica</text>
+    <text class="cls-2" transform="translate(550.474 141.459)">replica</text>
+    <text class="cls-2" transform="translate(550.474 159.709)">replica</text>
+    <text class="cls-2" transform="translate(560.694 175.039)">replica</text>
+    <text class="cls-2" transform="translate(624.205 26.848)">replica</text>
+    <text class="cls-2" transform="translate(635.52 46.558)">replica</text>
+    <text class="cls-2" transform="translate(628.95 69.918)">replica</text>
+    <text class="cls-2" transform="translate(620.802 93.234)">replica</text>
+    <text class="cls-2" transform="translate(624.935 118.829)">replica</text>
+    <text class="cls-2" transform="translate(614.35 130.874)">replica</text>
+    <text class="cls-2" transform="translate(616.54 154.234)">replica</text>
+    <text class="cls-2" transform="translate(623.11 171.024)">replica</text>
+    <text class="cls-2" transform="translate(695.016 36.338)">replica</text>
+    <text class="cls-2" transform="translate(699.805 55.116)">replica</text>
+    <text class="cls-2" transform="translate(697.206 75.028)">replica</text>
+    <text class="cls-2" transform="translate(702.237 95.311)">replica</text>
+    <text class="cls-2" transform="translate(695.83 118.385)">replica</text>
+    <text class="cls-2" transform="translate(707.056 131.732)">replica</text>
+    <text class="cls-2" transform="translate(698.666 147.186)">replica</text>
+    <text class="cls-2" transform="translate(695.835 173.703)">replica</text>
+    <text class="cls-2" transform="translate(772.396 28.308)">replica</text>
+    <text class="cls-2" transform="translate(783.712 48.018)">replica</text>
+    <text class="cls-2" transform="translate(777.141 71.378)">replica</text>
+    <text class="cls-2" transform="translate(780.18 103.084)">replica</text>
+    <text class="cls-2" transform="translate(773.126 120.289)">replica</text>
+    <text class="cls-2" transform="translate(762.541 132.334)">replica</text>
+    <text class="cls-2" transform="translate(764.731 155.694)">replica</text>
+    <text class="cls-2" transform="translate(771.301 172.484)">replica</text>
+    <text class="cls-2" transform="translate(779.881 34.878)">replica</text>
+    <text class="cls-2" transform="translate(782.071 73.568)">replica</text>
+    <text class="cls-2" transform="translate(790.831 101.309)">replica</text>
+    <text class="cls-2" transform="translate(793.751 175.039)">replica</text>
+    <text class="cls-2" transform="translate(857.262 26.848)">replica</text>
+    <text class="cls-2" transform="translate(868.577 46.558)">replica</text>
+    <text class="cls-2" transform="translate(862.007 69.918)">replica</text>
+    <text class="cls-2" transform="translate(853.858 93.234)">replica</text>
+    <text class="cls-2" transform="translate(857.992 118.829)">replica</text>
+    <text class="cls-2" transform="translate(847.407 130.874)">replica</text>
+    <text class="cls-2" transform="translate(849.597 154.234)">replica</text>
+    <text class="cls-2" transform="translate(856.167 171.024)">replica</text>
+    <text class="cls-2" transform="translate(928.072 36.338)">replica</text>
+    <text class="cls-2" transform="translate(932.862 55.116)">replica</text>
+    <text class="cls-2" transform="translate(930.263 75.028)">replica</text>
+    <text class="cls-2" transform="translate(935.294 95.311)">replica</text>
+    <text class="cls-2" transform="translate(928.886 118.385)">replica</text>
+    <text class="cls-2" transform="translate(940.113 131.732)">replica</text>
+    <text class="cls-2" transform="translate(931.723 147.186)">replica</text>
+    <text class="cls-2" transform="translate(928.891 173.703)">replica</text>
+    <text class="cls-2" transform="translate(1005.453 28.308)">replica</text>
+    <text class="cls-2" transform="translate(1016.768 48.018)">replica</text>
+    <text class="cls-2" transform="translate(1010.198 71.378)">replica</text>
+    <text class="cls-2" transform="translate(1013.237 103.084)">replica</text>
+    <text class="cls-2" transform="translate(1006.183 120.289)">replica</text>
+    <text class="cls-2" transform="translate(995.598 132.334)">replica</text>
+    <text class="cls-2" transform="translate(997.788 155.694)">replica</text>
+    <text class="cls-2" transform="translate(1004.358 172.484)">replica</text>
+    <text class="cls-2" transform="translate(562.672 32.081)">replica</text>
+    <text class="cls-2" transform="translate(573.987 51.792)">replica</text>
+    <text class="cls-2" transform="translate(564.862 70.772)">replica</text>
+    <text class="cls-2" transform="translate(573.622 98.512)">replica</text>
+    <text class="cls-2" transform="translate(568.147 117.857)">replica</text>
+    <text class="cls-2" transform="translate(566.322 138.662)">replica</text>
+    <text class="cls-2" transform="translate(566.322 156.913)">replica</text>
+    <text class="cls-2" transform="translate(576.542 172.243)">replica</text>
+    <text class="cls-2" transform="translate(640.053 24.051)">replica</text>
+    <text class="cls-2" transform="translate(651.368 43.762)">replica</text>
+    <text class="cls-2" transform="translate(644.798 67.122)">replica</text>
+    <text class="cls-2" transform="translate(636.65 90.437)">replica</text>
+    <text class="cls-2" transform="translate(640.783 116.032)">replica</text>
+    <text class="cls-2" transform="translate(630.198 128.077)">replica</text>
+    <text class="cls-2" transform="translate(632.388 151.438)">replica</text>
+    <text class="cls-2" transform="translate(638.958 168.228)">replica</text>
+    <text class="cls-2" transform="translate(710.864 33.541)">replica</text>
+    <text class="cls-2" transform="translate(715.653 52.319)">replica</text>
+    <text class="cls-2" transform="translate(713.054 72.232)">replica</text>
+    <text class="cls-2" transform="translate(718.085 92.514)">replica</text>
+    <text class="cls-2" transform="translate(711.677 115.588)">replica</text>
+    <text class="cls-2" transform="translate(722.904 128.936)">replica</text>
+    <text class="cls-2" transform="translate(711.683 170.906)">replica</text>
+    <text class="cls-2" transform="translate(799.559 45.222)">replica</text>
+    <text class="cls-2" transform="translate(780.579 152.898)">replica</text>
+    <text class="cls-2" transform="translate(778.145 41.537)">replica</text>
+    <text class="cls-2" transform="translate(777.78 88.258)">replica</text>
+    <text class="cls-2" transform="translate(772.305 107.603)">replica</text>
+    <text class="cls-2" transform="translate(855.526 33.507)">replica</text>
+    <text class="cls-2" transform="translate(848.956 56.867)">replica</text>
+    <text class="cls-2" transform="translate(840.807 80.183)">replica</text>
+    <text class="cls-2" transform="translate(844.941 105.778)">replica</text>
+    <text class="cls-2" transform="translate(834.356 117.823)">replica</text>
+    <text class="cls-2" transform="translate(836.546 141.183)">replica</text>
+    <text class="cls-2" transform="translate(843.116 157.973)">replica</text>
+    <text class="cls-2" transform="translate(915.021 23.287)">replica</text>
+    <text class="cls-2" transform="translate(919.811 42.065)">replica</text>
+    <text class="cls-2" transform="translate(917.211 61.977)">replica</text>
+    <text class="cls-2" transform="translate(922.242 82.26)">replica</text>
+    <text class="cls-2" transform="translate(915.835 105.334)">replica</text>
+    <text class="cls-2" transform="translate(918.671 134.135)">replica</text>
+    <text class="cls-2" transform="translate(915.84 160.652)">replica</text>
+    <text class="cls-2" transform="translate(1003.717 34.967)">replica</text>
+    <text class="cls-2" transform="translate(997.147 58.327)">replica</text>
+    <text class="cls-2" transform="translate(1000.185 90.033)">replica</text>
+    <text class="cls-2" transform="translate(993.132 107.238)">replica</text>
+    <text class="cls-2" transform="translate(982.547 119.283)">replica</text>
+    <text class="cls-2" transform="translate(984.737 142.643)">replica</text>
+    <text class="cls-2" transform="translate(991.307 159.433)">replica</text>
+  </g>
+</svg>

@@ -7,7 +7,7 @@
     {% assign sortedSongs = site.songs | sort:"position" %}
     {% for song in sortedSongs %}
     <div class="tape">
-      <img src="{{ song.cover }}" />
+      <img src="{{ song.image }}" />
       <audio id="{{ song.id }}">
         <source src="{{ song.file }}" type="audio/mpeg">
       </audio>
@@ -19,6 +19,7 @@
     </script>
     {% endfor %}
   </div>
+  <div class="tapePlayer"></div>
 </body>
 
 </html>
