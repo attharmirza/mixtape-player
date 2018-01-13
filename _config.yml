@@ -21,11 +21,11 @@ defaults:
     path: ''
     type: songs
   values:
-    title:
-    identifier:
-    artist:
-    image:
-    file:
+    title: 
+    identifier: 
+    artist: 
+    image: 
+    file: 
 source: "."
 destination: "./_site"
 collections_dir: "."
@@ -50,7 +50,7 @@ keep_files:
 encoding: utf-8
 markdown_ext: markdown,mkdown,mkdn,mkd,md
 strict_front_matter: false
-show_drafts:
+show_drafts: 
 limit_posts: 0
 future: false
 unpublished: false
@@ -62,7 +62,7 @@ incremental: false
 detach: false
 port: 4000
 host: 127.0.0.1
-baseurl: "https://attharmirza.github.io/MixtapeWebsite"
+baseurl: https://attharmirza.github.io/MixtapeWebsite
 show_dir_listing: false
 permalink: date
 paginate_path: "/page:num"
