@@ -72,7 +72,6 @@ defaults:
     artist:
     image:
     file:
-    position:
 
 # Markdown Processors
 rdiscount:

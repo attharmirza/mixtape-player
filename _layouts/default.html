@@ -4,7 +4,8 @@
 
 <body>
   <div class="tapeRack">
-    {% for song in site.songs %}
+    {% assign sortedSongs = site.songs | sort:"position" %}
+    {% for song in sortedSongs %}
     <div class="tape">
       <img src="{{ song.cover }}" />
       <audio id="{{ song.id }}">
