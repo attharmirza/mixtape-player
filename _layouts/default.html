@@ -1,0 +1,23 @@
+<html>
+
+{% include info.html %}
+
+<body>
+  <div class="tapeRack">
+    {% for song in site.songs %}
+    <div class="tape">
+      <img src="{{ song.cover }}" />
+      <audio id="{{ song.id }}">
+        <source src="{{ song.file }}" type="audio/mpeg">
+      </audio>
+    </div>
+    <script>
+      $(document).ready(function() {
+        // $('#{{ song.id }}')
+      });
+    </script>
+    {% endfor %}
+  </div>
+</body>
+
+</html>
