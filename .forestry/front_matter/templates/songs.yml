@@ -1,4 +1,6 @@
 ---
+pages:
+- _songs/backseat.md
 hide_body: false
 fields:
 - name: title
