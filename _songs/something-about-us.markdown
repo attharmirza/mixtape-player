@@ -1,6 +1,7 @@
 ---
 title: Something About Us
 date: 2018-01-14 10:43:00 Z
+position: 7
 identifier: something
 artist: Daft Punk
 image: "/uploads/something.svg"
