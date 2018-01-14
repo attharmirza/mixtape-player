@@ -5,5 +5,5 @@ identifier: replica
 artist: The XX
 image: "/uploads/replica.svg"
 file: "/uploads/replica.mp3"
+mixtape: Amylia
 ---
-

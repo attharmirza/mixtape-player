@@ -17,6 +17,10 @@ defaults:
     type: pages
   values:
     layout: default
+    title:
+    author:
+    description:
+    mixtape:
 - scope:
     path: ''
     type: songs
@@ -26,8 +30,9 @@ defaults:
     artist:
     image:
     file:
+    mixtape:
 source: "."
-destination: "./_siteDEV"
+destination: "./_site"
 collections_dir: "."
 plugins_dir: _plugins
 layouts_dir: _layouts

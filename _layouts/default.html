@@ -85,7 +85,9 @@
       </svg>
     </div>
     <div class="tapeRack">
-      {% assign sortedSongs = site.songs | sort:"position" %} {% for song in sortedSongs %}
+      {% assign sortedSongs = site.songs | sort:"position" %}
+      {% for song in sortedSongs %}
+      {% if song.mixtape == page.mixtape %}
       <div class="tape {{ song.identifier }}">
         <img src="{{ site.baseurl }}{{ song.image }}" />
         <audio id="{{ song.identifier }}" onended="nextSong()">
@@ -101,6 +103,7 @@
           });
         });
       </script>
+      {% endif %}
       {% endfor %}
     </div>
   </div>

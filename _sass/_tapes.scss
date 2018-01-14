@@ -1,11 +1,13 @@
 .tapePlayer {
   width: 70%;
+  max-width: 900px;
   margin: auto;
 }
 
 .tapeRack {
   position:absolute;
   width: 80vw;
+  max-width: 900px;
   left: 50%;
   transform: translateX(-50%);
   // border-bottom: 5px rgb(0, 0, 0) solid;

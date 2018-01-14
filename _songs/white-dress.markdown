@@ -5,5 +5,5 @@ identifier: white
 artist: Kanye West
 image: "/uploads/white.svg"
 file: "/uploads/white.mp3"
+mixtape: Amylia
 ---
-
