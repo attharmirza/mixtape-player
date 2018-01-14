@@ -23,6 +23,8 @@
   width: 70%;
   left: 50%;
   transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
 
   &:hover {
     // background-color: rgb(249, 62, 62);
