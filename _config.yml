@@ -17,20 +17,20 @@ defaults:
     type: pages
   values:
     layout: default
-    title:
-    author:
-    description:
-    mixtape:
+    title: 
+    author: 
+    description: 
+    mixtape: 
 - scope:
     path: ''
     type: songs
   values:
-    title:
-    identifier:
-    artist:
-    image:
-    file:
-    mixtape:
+    title: 
+    identifier: 
+    artist: 
+    image: 
+    file: 
+    mixtape: 
 source: "."
 destination: "./_site"
 collections_dir: "."
@@ -55,7 +55,7 @@ keep_files:
 encoding: utf-8
 markdown_ext: markdown,mkdown,mkdn,mkd,md
 strict_front_matter: false
-show_drafts:
+show_drafts: 
 limit_posts: 0
 future: false
 unpublished: false
