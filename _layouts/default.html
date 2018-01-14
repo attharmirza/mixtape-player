@@ -85,9 +85,7 @@
       </svg>
     </div>
     <div class="tapeRack">
-      {% assign sortedSongs = site.songs | sort:"position" %}
-      {% for song in sortedSongs %}
-      {% if song.mixtape == page.mixtape %}
+      {% assign sortedSongs = site.songs | sort:"position" %} {% for song in sortedSongs %} {% if song.mixtape == page.mixtape %}
       <div class="tape {{ song.identifier }}" style="background-image: url('{{ site.baseurl }}{{ song.image }}');">
         <!-- <img src="{{ site.baseurl }}{{ song.image }}" /> -->
         <audio id="{{ song.identifier }}" onended="nextSong()">
@@ -103,8 +101,7 @@
           });
         });
       </script>
-      {% endif %}
-      {% endfor %}
+      {% endif %} {% endfor %}
     </div>
     <div class="table"></div>
   </div>
@@ -163,6 +160,10 @@
     $(document).ready(function() {
       randomShift();
 
+      $(".tape").height(function() {
+        return $(this).width() * 0.181818;
+      })
+
       $('.content').css('top', function() {
         var windowHeight = $(window).height();
         var elementHeight = $(this).height();
@@ -173,10 +174,6 @@
           return 0;
         };
       });
-
-      $(".tape").height(function() {
-        return $(this).width() * 0.181818;
-      })
     });
   </script>
 </body>
