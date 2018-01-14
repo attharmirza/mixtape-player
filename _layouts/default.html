@@ -106,6 +106,7 @@
       {% endif %}
       {% endfor %}
     </div>
+    <div class="table"></div>
   </div>
 
   <script>
@@ -161,6 +162,17 @@
 
     $(document).ready(function() {
       randomShift();
+
+      $('.content').css('top', function() {
+        var windowHeight = $(window).height();
+        var elementHeight = $(this).height();
+
+        if (windowHeight - elementHeight >= 0) {
+          return windowHeight - elementHeight;
+        } else {
+          return 0;
+        };
+      });
     });
   </script>
 </body>

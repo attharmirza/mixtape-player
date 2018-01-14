@@ -5,14 +5,13 @@
 }
 
 .tapeRack {
-  position:absolute;
+  // position: absolute;
   width: 80vw;
   max-width: 900px;
-  left: 50%;
-  transform: translateX(-50%);
-  // border-bottom: 5px rgb(0, 0, 0) solid;
-  padding-bottom: 20px;
-  // margin-bottom: 10px;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // padding-bottom: 20px;
+  margin: 0 auto;
 }
 
 .tape {
