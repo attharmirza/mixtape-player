@@ -1,5 +1,5 @@
 .tapePlayer {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -27,4 +27,20 @@
     // background-color: rgb(249, 62, 62);
     cursor: pointer;
   }
+}
+
+#Wheel1, #Wheel2 {
+  transform-origin:center;
+}
+
+.rotation {
+  animation-name: rotation;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(360deg);}
 }

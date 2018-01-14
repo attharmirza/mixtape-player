@@ -1,7 +1,4 @@
 ---
----
-
----
 title: Mixtape Website
 timezone: UTC
 collections:
@@ -30,7 +27,7 @@ defaults:
     image:
     file:
 source: "."
-destination: "./_site"
+destination: "./_siteDEV"
 collections_dir: "."
 plugins_dir: _plugins
 layouts_dir: _layouts

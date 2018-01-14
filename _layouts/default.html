@@ -11,7 +11,7 @@
             .cls-1, .cls-2, .cls-3 {
               fill: none;
               stroke: #000;
-              stroke-width: 7px;
+              stroke-width: 4px;
             }
 
             .cls-1 {
@@ -123,6 +123,9 @@
         $('.title').text(title);
         $('.artist').text(artist);
 
+        $('#Wheel1').addClass('rotation');
+        $('#Wheel2').addClass('rotation');
+
         currentTrack = $(this).find('audio')[0];
 
         return currentTrack;
@@ -130,6 +133,9 @@
         $(obj).css('background-color', 'inherit');
         $(obj).find('audio')[0].pause()
         $(obj).find('audio')[0].load();;
+
+        $('#Wheel1').removeClass('rotation');
+        $('#Wheel2').removeClass('rotation');
       };
     };
 
