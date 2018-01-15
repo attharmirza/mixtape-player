@@ -83,6 +83,9 @@
           <rect id="Center" x="309" y="733" width="136" height="80" rx="12" ry="12"/>
         </g>
       </svg>
+      <audio id="tapeStartSound">
+        <source src="{{ site.baseurl }}/assets/tape.mp3" type="audio/mpeg"/>
+      </audio>
     </div>
     <div class="tapeRack">
       {% assign sortedSongs = site.songs | sort:"position" %} {% for song in sortedSongs %} {% if song.mixtape == page.mixtape %}
@@ -119,13 +122,17 @@
         };
         $('.tape').css('background-color', 'inherit')
         $(obj).css('background-color', 'rgb(249, 62, 62)');
-        $(obj).find('audio')[0].play();
+        $('#tapeStartSound')[0].play();
+
+        $('#tapeStartSound')[0].onended = function () {
+          $(obj).find('audio')[0].play();
+
+          $('#Wheel1').addClass('rotation');
+          $('#Wheel2').addClass('rotation');
+        };
 
         $('.title').text(title);
         $('.artist').text(artist);
-
-        $('#Wheel1').addClass('rotation');
-        $('#Wheel2').addClass('rotation');
 
         currentTrack = $(obj).find('audio')[0];
 
