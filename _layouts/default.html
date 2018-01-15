@@ -88,7 +88,7 @@
       </audio>
     </div>
     <div class="tapeRack">
-      {% assign sortedSongs = site.songs | sort:"position" %} {% for song in sortedSongs %} {% if song.mixtape == page.mixtape %}
+      {% assign sortedSongs = site.songs | sort:"position" %} {% for song in sortedSongs %} {% if song.mixtape contains page.mixtape %}
       <div class="tape {{ song.identifier }}" style="background-image: url('{{ site.baseurl }}{{ song.image }}');">
         <!-- <img src="{{ site.baseurl }}{{ song.image }}" /> -->
         <audio id="{{ song.identifier }}" onended="nextSong()">
