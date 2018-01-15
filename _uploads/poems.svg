@@ -28,7 +28,7 @@
         fill: url(#Scotch_Rule_4);
       }
     </style>
-    <pattern id="Scotch_Rule_4" data-name="Scotch Rule 4" width="87.84" height="72" patternUnits="userSpaceOnUse" viewBox="0 0 87.84 72">
+    <pattern id="Scotch_Rule_4" data-name="Scotch Rule 4" width="87.84" height="72" patternTransform="translate(0 216)" patternUnits="userSpaceOnUse" viewBox="0 0 87.84 72">
       <rect class="cls-1" width="87.84" height="72"/>
       <line class="cls-2" x1="43.92" y1="72" x2="43.92"/>
       <line class="cls-2" x1="14.64" y1="72" x2="14.64"/>
