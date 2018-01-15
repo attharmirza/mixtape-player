@@ -86,6 +86,9 @@
       <audio id="tapeStartSound">
         <source src="{{ site.baseurl }}/assets/tape.mp3" type="audio/mpeg"/>
       </audio>
+      <audio id="tapeSwitchSound">
+        <source src="{{ site.baseurl }}/assets/click.mp3" type="audio/mpeg"/>
+      </audio>
     </div>
     <div class="tapeRack">
       {% assign sortedSongs = site.songs | sort:"position" %} {% for song in sortedSongs %} {% if song.mixtape contains page.mixtape %}
@@ -113,6 +116,7 @@
     var allTracks = $('body').find('audio');
     var allTapes = $('.tape');
     var currentTrack;
+    var firstClick = true;
 
     var songControls = function(obj, title, artist) {
       if ($(obj).find('audio')[0].paused == true) {
@@ -120,16 +124,29 @@
           allTracks[i].pause();
           allTracks[i].load();
         };
+
         $('.tape').css('background-color', 'inherit')
         $(obj).css('background-color', 'rgb(249, 62, 62)');
-        $('#tapeStartSound')[0].play();
 
-        $('#tapeStartSound')[0].onended = function () {
-          $(obj).find('audio')[0].play();
+        if (firstClick == true) {
+          // console.log('dang');
+          $('#tapeStartSound')[0].play();
+          $('#tapeStartSound')[0].onended = function() {
+            $(obj).find('audio')[0].play();
 
-          $('#Wheel1').addClass('rotation');
-          $('#Wheel2').addClass('rotation');
-        };
+            $('#Wheel1').addClass('rotation');
+            $('#Wheel2').addClass('rotation');
+          };
+        } else {
+          // console.log('yay');
+          $('#tapeSwitchSound')[0].play();
+          $('#tapeSwitchSound')[0].onended = function() {
+            $(obj).find('audio')[0].play();
+
+            $('#Wheel1').addClass('rotation');
+            $('#Wheel2').addClass('rotation');
+          };
+        }
 
         $('.title').text(title);
         $('.artist').text(artist);
@@ -148,6 +165,7 @@
     };
 
     var nextSong = function() {
+      firstClick = false;
       for (i = 0; i < allTracks.length; i++) {
         if (allTracks[i] == currentTrack) {
           $(allTracks[i + 1]).parent().trigger('click');
@@ -180,6 +198,10 @@
         } else {
           return 0;
         };
+      });
+
+      $('.tapeRack').click(function () {
+        firstClick = true;
       });
     });
   </script>

@@ -1,7 +1,6 @@
 ---
-title: Amylia's Mixtape
+title: Mixtape Builder
 author: Atthar Mirza
-description: A mixtape stack designed from the ground up for that special someone.
-mixtape: Amylia
+description: Send mixtapes to your special someone, a touch of retro in the modern world.
+mixtape: Index
 ---
-
