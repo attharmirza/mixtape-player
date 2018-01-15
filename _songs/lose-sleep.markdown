@@ -1,7 +1,7 @@
 ---
 title: Lose Sleep
 date: 2018-01-13 09:29:00 Z
-position: 4
+position: 5
 identifier: lose
 artist: Remi
 image: "/uploads/lose.svg"
