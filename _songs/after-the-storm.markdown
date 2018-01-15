@@ -6,6 +6,6 @@ identifier: storm
 artist: Kali Uchis
 image: "/uploads/storm.svg"
 file: "/uploads/storm.mp3"
-mixtape: Amylia
+mixtape: Amylia, Mondays
 ---
 
