@@ -6,6 +6,6 @@ identifier: only
 artist: Raveena
 image: "/uploads/only.svg"
 file: "/uploads/only.mp3"
-mixtape: Amylia
+mixtape: Amylia, Mondays
 ---
 
