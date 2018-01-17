@@ -123,6 +123,9 @@
       <audio id="tapeSwitchSound">
         <source src="{{ site.baseurl }}/assets/click.mp3" type="audio/mpeg"/>
       </audio>
+      <audio id="buttonSound">
+        <source src="{{ site.baseurl }}/assets/button.mp3" type="audio/mpeg"/>
+      </audio>
     </div>
     <script>
       var stopButton = function() {
@@ -161,9 +164,6 @@
         }
       };
       var pauseButton = function() {
-        // console.log(currentTrack);
-        console.log(playing);
-
         if (playing) {
           d3.select('#Pause').attr('transform', 'translate(0, 1)');
           d3.select('#Pause').select('rect').style('fill', 'rgb(249, 62, 62)');
@@ -182,16 +182,24 @@
       };
 
       $(document).ready(function() {
-        d3.select('#Play').on("click", playButton);
-        d3.select('#Pause').on("click", pauseButton);
+        d3.select('#Play').on("click", function() {
+          $('#buttonSound')[0].play();
+          playButton();
+        });
+        d3.select('#Pause').on("click", function() {
+          $('#buttonSound')[0].play();
+          pauseButton();
+        });
         d3.select('#Back').on("click", function() {
+          $('#buttonSound')[0].play();
           if (firstClickEver) {
-            lastSong()
+            lastSong();
           }
         });
         d3.select('#Next').on("click", function() {
+          $('#buttonSound')[0].play();
           if (firstClickEver) {
-            nextSong()
+            nextSong();
           }
         });
       });

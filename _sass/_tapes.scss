@@ -64,7 +64,9 @@
 }
 
 #Wheel1, #Wheel2 {
-  transform-origin:center;
+  transform-box: fill-box;
+  transform-origin: center;
+  // -webkit-transform-origin: center;
 }
 
 .rotation {
