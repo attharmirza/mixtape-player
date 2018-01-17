@@ -71,8 +71,42 @@
             <path d="M824,645c-2,2-5,40,0,41s154,5,157-4,0-35-4-37S824,645,824,645Z"/>
             <path class="cls-3" d="M86.049,597c13.451,6.5-13.549,12.5,0,11,2.416-.268,5.451,8.5-19.45,23,23.9-2.5,20.195,13.5,12.9,14.5s30,6,7.765,15.5c-8.991,3.841,516.638-11,557.969-6s40.116-19,25.528-19c21.738-9.5,13.738-9.5-8.509-20,8.509,0,8.509-11,8.509-11s-3.646-3-10.94-8S671.5,582.5,671.5,582.5,131.027,592,86.049,597Z"/>
             <path class="cls-3" d="M558.5,925.5c-10.606-5.065-.1-8.065-10.754-6.836-1.9.219-4.784,5.333,14.754-6.164-18.795,2.053-15.471-22.55-9.737-23.363s-23.623-4.612-6.164-12.166c7.059-3.054-277.42.512-309.955-3.273s-20.621,15.854-9.144,15.8c-17.068,7.552-37.54,10.819-20,19-6.695.031,14-3,14-3s-1.88,9.974,3.876,13.881-9.136,11.45-9.136,11.45S523.132,929.6,558.5,925.5Z"/>
+            <rect class="cls-2" x="384.333" y="1020" width="148" height="46" rx="12" ry="12"/>
+            <rect class="cls-2" x="218.667" y="1020" width="148" height="46" rx="12" ry="12"/>
+            <rect class="cls-2" x="550" y="1020" width="148" height="46" rx="12" ry="12"/>
+            <rect class="cls-2" x="53" y="1020" width="148" height="46" rx="12" ry="12"/>
           </g>
         </g>
+        <g id="Controls">
+          <g class="tapeButton" id="Play" transform="translate(0 -11)">
+              <rect class="cls-2" x="384.333" y="1020" width="148" height="46" rx="12" ry="12"/>
+              <polygon class="cls-1" points="449.099 1053.494 467.567 1042.375 449.099 1032.506 449.099 1053.494"/>
+          </g>
+          <g class="tapeButton" id="Pause" transform="translate(0 -11)">
+              <rect class="cls-2" x="218.667" y="1020" width="148" height="46" rx="12" ry="12"/>
+              <g>
+                <line class="cls-1" x1="301.398" y1="1032.981" x2="301.398" y2="1053.97"/>
+                <line class="cls-1" x1="282.93" y1="1032.981" x2="282.93" y2="1053.97"/>
+              </g>
+          </g>
+          <g class="tapeButton" id="Next" transform="translate(0 -11)">
+            <rect class="cls-2" x="550" y="1020" width="148" height="46" rx="12" ry="12"/>
+            <g>
+              <polygon class="cls-1" points="604.455 1053.514 622.923 1042.394 604.455 1032.525 604.455 1053.514"/>
+              <polygon class="cls-1" points="625.077 1051.298 643.545 1043.671 625.077 1033.801 625.077 1051.298"/>
+              <line class="cls-1" x1="643.545" y1="1052.205" x2="643.545" y2="1033.801"/>
+            </g>
+          </g>
+          <g class="tapeButton" id="Back" transform="translate(0 -11)">
+            <rect class="cls-2" x="53" y="1020" width="148" height="46" rx="12" ry="12"/>
+            <g class="button">
+              <polygon class="cls-1" points="146.545 1032.055 128.077 1043.174 146.545 1053.044 146.545 1032.055"/>
+              <polygon class="cls-1" points="125.923 1034.271 107.455 1041.898 125.923 1051.767 125.923 1034.271"/>
+              <line class="cls-1" x1="107.455" y1="1033.364" x2="107.455" y2="1051.767"/>
+            </g>
+          </g>
+        </g>
+      </g>
         <g id="Titles">
           <text class="cls-4 title" transform="translate(379.752 637.945) rotate(-1.704)" text-anchor="middle">{{ page.title }}</text>
           <text class="cls-5 artist" transform="matrix(1, -0.008, 0.008, 1, 383.52, 913.033)" text-anchor="middle">by {{ page.author }}</text>
@@ -90,6 +124,78 @@
         <source src="{{ site.baseurl }}/assets/click.mp3" type="audio/mpeg"/>
       </audio>
     </div>
+    <script>
+      var stopButton = function() {
+        if (pauseSelected) {
+          d3.select('#Pause').attr('transform', 'translate(0, -11)').select('rect').style('fill', 'rgb(255, 255, 255)');
+          pauseSelected = false;
+        };
+        if (playSelected) {
+          d3.select('#Play').attr('transform', 'translate(0, -11)').select('rect').style('fill', 'rgb(255, 255, 255)');
+          playSelected = false;
+        };
+
+        $('#Wheel1').removeClass('rotation');
+        $('#Wheel2').removeClass('rotation');
+
+        playing = false;
+      }
+      var playButton = function() {
+        d3.select('#Play').attr('transform', 'translate(0, 1)');
+        d3.select('#Play').select('rect').style('fill', 'rgb(249, 62, 62)');
+        if (pauseSelected) {
+          d3.select('#Pause').attr('transform', 'translate(0, -11)').select('rect').style('fill', 'rgb(255, 255, 255)');
+          pauseSelected = false;
+        };
+        playSelected = true;
+
+        // currentTrack.play();
+
+        if (playing) {
+          currentTrack.play();
+          $('#Wheel1').addClass('rotation');
+          $('#Wheel2').addClass('rotation');
+          paused = false;
+        } else {
+          $(allTapes[0]).trigger('click');
+        }
+      };
+      var pauseButton = function() {
+        // console.log(currentTrack);
+        console.log(playing);
+
+        if (playing) {
+          d3.select('#Pause').attr('transform', 'translate(0, 1)');
+          d3.select('#Pause').select('rect').style('fill', 'rgb(249, 62, 62)');
+          if (playSelected) {
+            d3.select('#Play').attr('transform', 'translate(0, -11)').select('rect').style('fill', 'rgb(255, 255, 255)');
+            playSelected = false;
+          };
+          pauseSelected = true;
+          paused = true;
+
+          $('#Wheel1').removeClass('rotation');
+          $('#Wheel2').removeClass('rotation');
+
+          currentTrack.pause();
+        }
+      };
+
+      $(document).ready(function() {
+        d3.select('#Play').on("click", playButton);
+        d3.select('#Pause').on("click", pauseButton);
+        d3.select('#Back').on("click", function() {
+          if (firstClickEver) {
+            lastSong()
+          }
+        });
+        d3.select('#Next').on("click", function() {
+          if (firstClickEver) {
+            nextSong()
+          }
+        });
+      });
+    </script>
     <div class="tapeRack">
       {% assign sortedSongs = site.songs | sort:"position" %} {% for song in sortedSongs %} {% if song.mixtape contains page.mixtape %}
       <div class="tape {{ song.identifier }}" style="background-image: url('{{ site.baseurl }}{{ song.image }}');">
@@ -103,7 +209,8 @@
           var songTitle = '{{ song.title }}';
           var songArtist = '{{ song.artist }}'
           $('.{{ song.identifier }}').click(function() {
-            songControls($(this), songTitle, songArtist)
+            firstClickEver = true;
+            songControls($(this), songTitle, songArtist);
           });
         });
       </script>
@@ -113,10 +220,17 @@
   </div>
 
   <script>
-    var allTracks = $('body').find('audio');
+    var allTracks = $('.tapeRack').find('audio');
     var allTapes = $('.tape');
-    var currentTrack;
+    var currentTrack = $('.tape').find('audio')[0];
     var firstClick = true;
+    var firstClickEver = false;
+    var playSelected = false;
+    var pauseSelected = false;
+    var playing = false;
+    var paused = true;
+
+    console.log(allTapes);
 
     var songControls = function(obj, title, artist) {
       if ($(obj).find('audio')[0].paused == true) {
@@ -127,24 +241,24 @@
 
         $('.tape').css('background-color', 'inherit')
         $(obj).css('background-color', 'rgb(249, 62, 62)');
+        $('#Wheel1').removeClass('rotation');
+        $('#Wheel2').removeClass('rotation');
 
         if (firstClick == true) {
-          // console.log('dang');
           $('#tapeStartSound')[0].play();
           $('#tapeStartSound')[0].onended = function() {
-            $(obj).find('audio')[0].play();
-
-            $('#Wheel1').addClass('rotation');
-            $('#Wheel2').addClass('rotation');
+            // $(obj).find('audio')[0].play();
+            playing = true;
+            playButton();
           };
         } else {
-          // console.log('yay');
+          $('#Wheel1').removeClass('rotation');
+          $('#Wheel2').removeClass('rotation');
           $('#tapeSwitchSound')[0].play();
           $('#tapeSwitchSound')[0].onended = function() {
-            $(obj).find('audio')[0].play();
-
-            $('#Wheel1').addClass('rotation');
-            $('#Wheel2').addClass('rotation');
+            // $(obj).find('audio')[0].play();
+            playing = true;
+            playButton();
           };
         }
 
@@ -159,8 +273,7 @@
         $(obj).find('audio')[0].pause()
         $(obj).find('audio')[0].load();;
 
-        $('#Wheel1').removeClass('rotation');
-        $('#Wheel2').removeClass('rotation');
+        stopButton();
       };
     };
 
@@ -169,7 +282,20 @@
       for (i = 0; i < allTracks.length; i++) {
         if (allTracks[i] == currentTrack) {
           $(allTracks[i + 1]).parent().trigger('click');
-        }
+        } else if (allTracks[allTracks.length - 1] == currentTrack) {
+          $(allTracks[0]).parent().trigger('click');
+        };
+      };
+    };
+
+    var lastSong = function() {
+      firstClick = false;
+      for (i = 0; i < allTracks.length; i++) {
+        if (allTracks[i] == currentTrack) {
+          $(allTracks[i - 1]).parent().trigger('click');
+        } else if (allTracks[0] == currentTrack) {
+          $(allTracks[allTracks.length - 1]).parent().trigger('click');
+        };
       };
     };
 
@@ -200,9 +326,32 @@
         };
       });
 
-      $('.tapeRack').click(function () {
+      $('.tapeRack').click(function() {
         firstClick = true;
       });
+
+      $(window).keypress(function(e) {
+        console.log(event.keyCode);
+        if (e.keyCode == 32) {
+          if (paused) {
+            playButton();
+          } else {
+            pauseButton();
+          }
+        }
+      });
+
+      $(window).keydown(function(e) {
+        if (e.keyCode == 39) {
+          if (firstClickEver) {
+            nextSong()
+          }
+        } else if (e.keyCode == 37) {
+          if (firstClickEver) {
+            lastSong()
+          }
+        }
+      })
     });
   </script>
 </body>

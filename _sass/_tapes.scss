@@ -2,6 +2,37 @@
   width: 70%;
   max-width: 600px;
   margin: auto;
+
+  .tapeButton {
+    rect {
+      fill: rgb(255, 255, 255);
+    }
+
+    polygon, line {
+      pointer-events: none;
+    }
+  }
+
+  #Pause:active {
+    transform: translate(0px, 1px);
+    rect {
+      fill: rgb(249, 62, 62);
+    }
+  }
+
+  #Next:active {
+    transform: translate(0px, 1px);
+    rect {
+      fill: rgb(249, 62, 62);
+    }
+  }
+
+  #Back:active {
+    transform: translate(0px, 1px);
+    rect {
+      fill: rgb(249, 62, 62);
+    }
+  }
 }
 
 .tapeRack {
