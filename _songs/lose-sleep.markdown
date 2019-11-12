@@ -6,6 +6,6 @@ identifier: lose
 artist: Remi
 image: "/uploads/lose.svg"
 file: "/uploads/lose.mp3"
-mixtape: Amylia
+mixtape: Amylia, Mondays
 ---
 
