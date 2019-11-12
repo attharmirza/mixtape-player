@@ -6,6 +6,6 @@ identifier: morning
 artist: Francis & the Lights
 image: "/uploads/morning.svg"
 file: "/uploads/morning.mp3"
-mixtape: Amylia
+mixtape: Amylia, Mondays
 ---
 
