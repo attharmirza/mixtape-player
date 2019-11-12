@@ -6,6 +6,6 @@ identifier: poems
 artist: Hippo Campus
 image: "/uploads/poems.svg"
 file: "/uploads/poems.mp3"
-mixtape: Amylia
+mixtape: Amylia, Mondays
 ---
 
