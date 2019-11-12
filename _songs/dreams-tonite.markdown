@@ -6,6 +6,6 @@ identifier: dreams
 artist: Alvvays
 image: "/uploads/dreams.svg"
 file: "/uploads/dreams.mp3"
-mixtape: Amylia
+mixtape: Amylia, Mondays
 ---
 
