@@ -6,6 +6,6 @@ identifier: something
 artist: Daft Punk
 image: "/uploads/something.svg"
 file: "/uploads/something.mp3"
-mixtape: Amylia
+mixtape: Amylia, Mondays
 ---
 
